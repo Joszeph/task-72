@@ -1,6 +1,10 @@
 import "./App.css";
+import Tags from "./Tags.js";
 
 function App() {
+
+  const arrOfItems = ['boomdotdev', 'task', 'tags', 'react']
+
   return (
     <div className="App">
       <section class="hero">
@@ -12,6 +16,7 @@ function App() {
       <div class="container is-fullhd">
         <div class="notification">
           Edit the <code>./src</code> folder to add components.
+          <Tags tags={arrOfItems}/>
         </div>
       </div>
     </div>
